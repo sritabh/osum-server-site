@@ -1,0 +1,115 @@
+@font-face { font-family: bs; src: url("help/hobo.ttf");}* { font-family: bs; }
+
+ table.background { background: url(rowbg.jpg) repeat; background-position: middle; background-size: 100%;}
+
+ p.counter {text-align: center; font-size: 22px; margin-top: 0px; color: #535fd4; }
+
+ body.background { background-image: url(bohdybg.jpg) no-repeat; background-position: middle; background-size: 100%;}
+
+@media (min-width: 480px) { body.background {background-image: linear-gradient(to bottom right, #6291de ,cyan, cyan);
+}
+}
+
+@media (max-width: 480px) { body.background { background: url(bodybg.jpg) no-repeat; background-position: middle; background-size: 100%;}
+}
+
+ header.background { background: url(logbg.png) repeat; background-position: middle; background-repeat: no-repeat; background-size: 105% 110%;}
+
+ body {background-color: ;} table {border-radius: 20px; width: 100%; } table { border: none;}
+
+ table {font-family: arial, sans-serif;border-collapse: collapse;width: 100%;
+table-layout: fixed;
+} 
+
+tr:nth-child(n + 502) {
+    display:none;
+}
+
+td, th {border-bottom: 1px solid #cee285;text-align: left;padding: 8px;} tr:nth-child(even) {background-color: #dddddd;}
+
+ table {counter-reset: Serial; border-collapse: collapse;} tr td:first-child:after {counter-increment: Serial; /* Display the counter */ content: counter(Serial);  /* increment the Serial counter */ }
+
+.scrollingTable { width: 100%; overflow-y: auto; }
+
+ a:link { color: black; background-color: transparent; text-decoration: none;}
+
+#load {
+  border: 16px solid #f3f3f3;
+  border-radius: 50%;
+  border-top: 16px solid #3498db;
+  width: 120px;
+  height: 120px;
+  position: fixed;
+  left: calc(50% - 50px);
+  top:50%;
+  z-index:1;
+  -webkit-animation: spin 2s linear infinite; /* Safari */
+  animation: spin 2s linear infinite;
+}
+
+/* Safari */
+@-webkit-keyframes spin {
+  0% { -webkit-transform: rotate(0deg); }
+  100% { -webkit-transform: rotate(360deg); }
+}
+
+
+/* Safari */
+@-webkit-keyframes spin {
+  0% { -webkit-transform: rotate(0deg); }
+  100% { -webkit-transform: rotate(360deg); }
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+
+ .dropbtn { background-color: transparent; color: white; padding: 5px; font-size: 20px; border: none; border-radius: 6px; 
+}
+
+ .dropdown { position: relative; display: inline-block; border-radius: 6px; 
+ }
+
+ .dropdown-content { display: none; position: absolute; background-color: #ddd; min-width: 160px; box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2); z-index: 1; border-radius: 8px;
+ }
+
+ .dropdown-content a { color: black; padding: 12px 16px; text-decoration: none; display: block; }
+
+ .dropdown-content a:hover {background-color: #ff9933;}
+ .dropdown:hover .dropdown-content {display: block;}
+
+ .dropdown:hover .dropbtn {background-color: #ff9933; border-radius: 6px} 
+
+@media(max-width: 480px) { th.block { display:none; } td.blocked { display:none; } } hr { clear: both; margin-top: 40px; margin-bottom: 40px; border: 0; border-top: 1px solid #aaaaaa; } h1.profile { font-size: 30px; margin-bottom: 40px; }
+
+ p.profile { margin-bottom: 20px; }
+
+ .btn { background: transparent; border: transparent; border-radius: 3px; color: black; display: inline-block; font-size: 14px; padding: 8px 15px; text-decoration: none; text-align: center; min-width: 60px; position: relative; transition: color 0.1s ease; /* top: 40em;*/ }
+
+ .closebtn { background: #ffb84d; border: #ffb84d; border-radius: 8px; color: black; display: inline-block; font-size: 14px; padding: 8px 15px; text-decoration: none; text-align: center; min-width: 60px; position: relative; transition: color .1s ease; /* top: 40em;*/ }
+
+ .btn:hover { background: transparent; }
+
+ .btn.btn-big { font-size: 18px; padding: 15px 20px; min-width: 100px; }
+
+ .btn-close { color: #aaaaaa; font-size: 30px; text-decoration: none; position: absolute; right: 5px; top: 0; }
+
+ .btn-close:hover { color: #919191; } .modal:before { content: ""; display: none; background: rgba(0, 0, 0, 0.6); position: fixed; top: 0; left: 0; right: 0; bottom: 0; z-index: 10; }
+
+ .modal:target:before { display: block; }
+
+ .modal:target .modal-dialog { -webkit-transform: translate(0, 0); -ms-transform: translate(0, 0); transform: translate(0, 0); top: 20%; }
+
+ .modal-dialog { background: url(modalbg.jpg);no-repeat; background-position: middle; background-size: 100%; border: #333333 solid 1px; border-radius: 5px; margin-left: -180px; margin-top: -100px; position: fixed; left: 50%; top: -180%; z-index: 11; width: 360px; -webkit-transform: translate(0, -500%); -ms-transform: translate(0, -500%); transform: translate(0, -500%); -webkit-transition: -webkit-transform 0.3s ease-out; -moz-transition: -moz-transform 0.3s ease-out; -o-transition: -o-transform 0.3s ease-out; transition: transform 0.3s ease-out; }
+
+ .modal-body { padding: 20px; }
+
+ .modal-header, .modal-footer { padding: 10px 20px; }
+
+ .modal-header { border-bottom: 00b3b3; solid 1px; }
+
+ .modal-header h2 { font-size: 20px; }
+
+ .modal-footer { border-top: #eeeeee solid 0px; text-align: right; margin-bottom: -1px; } /*ADDED TO STOP SCROLLING TO TOP*/ #home { display: none; } .column { width:50%; float:left }

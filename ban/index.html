@@ -1,0 +1,107 @@
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial scale=1"/><link rel="stylesheet" href="https://www.w3schools.com/lib/w3.css"/>
+<script type="text/javascript" src="../pageloader.js"></script>
+<style>
+
+@font-face {
+   font-family: myFirstFont;
+   src: url("hobo.ttf");
+}
+
+* {
+   font-family: myFirstFont;
+}
+p {
+        color: #5e3a11;
+}
+h1 {
+        color: #1e1b1c;
+}
+h2 {
+        color: #5e1111
+}
+.dropbtn { background-color: transparent; color: white; padding: 5px; font-size: 20px; border: none; border-radius: 6px; } .dropdown { position: relative; display: inline-block; border-radius: 6px; } .dropdown-content { display: none; position: absolute; background-color: #dddddd; min-width: 160px; box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2); z-index: 1; border-radius: 8px; } .dropdown-content a { color: black; padding: 12px 16px; text-decoration: none; display: block; } .dropdown-content a:hover {background-color: #ddd;} .dropdown:hover .dropdown-content {display: block;} .dropdown:hover .dropbtn {background-color: #ff9933; border-radius: 6px} 
+body.background { background-image: linear-gradient(to bottom right, #6291de ,cyan, cyan); repeat; background-position: middle; background-size: 100%;} 
+header.background { background: url(logobg.png) repeat; background-position: middle; background-repeat: no-repeat; background-size: 105% 110%;} body {background-color: #efb54a;} table {font-family: arial, sans-serif;border-collapse: collapse;width: 100%;} td, th {border: 2px solid #cee285;text-align: left;padding: 8px;} tr:nth-child(even) {background-color: #dddddd;} table {counter-reset: Serial; border-collapse: collapse;} tr td:first-child:after {counter-increment: Serial; /* Display the counter */ content: counter(Serial);  /* increment the Serial counter */ } a:link { color: black; background-color: transparent; text-decoration: none; }
+#load {
+  border: 16px solid #f3f3f3;
+  border-radius: 50%;
+  border-top: 16px solid #3498db;
+  width: 120px;
+  height: 120px;
+  position: fixed;
+  left: calc(50% - 50px);
+  top:50%;
+  z-index:9999;
+  -webkit-animation: spin 2s linear infinite; /* Safari */
+  animation: spin 2s linear infinite;
+}
+
+/* Safari */
+@-webkit-keyframes spin {
+  0% { -webkit-transform: rotate(0deg); }
+  100% { -webkit-transform: rotate(360deg); }
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+#box {
+  border: 0px solid;
+  padding: 1px 10px;
+  border-radius: 10px;
+  box-align: center;
+  float: centre;
+  box-sizing: border-box;
+  box-shadow: 0px 8px 16px 0px;
+  background-image: url("../modalbg.jpg") ;
+ background-position: middle; 
+ background-size: 100%;
+ text-align: left;
+ 
+ margin: 0 auto;
+ }
+@media (max-width: 480px) { #box {width: 350px;
+}
+}
+
+@media (min-width: 480px) { #box {width: 550px;
+}
+}
+
+</style>
+<script type="text/javascript" src="../blogsdata.json"></script><script type="text/javascript" src="../BlogsUpdate.js"></script>
+</head>
+<body onload="load()" class="background">
+<div id="load"></div><div id="contents">
+<center><img src="../logo1.png" WIDTH=350 HEIGHT=110 align="middle"></center>
+<div class="dropdown"> <button class="dropbtn" style="margin-right:16px"><b>Join ▾</b></button><div class="dropdown-content"><a href="https://discord.gg/p86ag6g">Discord</a><a href="https://chat.whatsapp.com/invite/CeAYOUcK1bK2Agd7p1xjvz">WhatsApp</a><a href="https://www.youtube.com/channel/UCAP2xSmi0WhXDs9ivpo1EAw">YouTube</a></div></div><div class="dropdown"><button class="dropbtn" style="margin-right:16px"><b>Help ▾</b></button><div class="dropdown-content"><a href="http://osum.ml/help">FAQs</a><a href="http://www.osum-blogs.ml">Visit Blogs!</a><a href="http://osum.ml/ban">Banned Players!</a></div></div>
+<b>➤</b><a href="http://osum.ml"><u><b>See Scores!</b></u></a>
+<div id= "blogsdata"></div>
+<h2><b>List Of Banned Players.</b></h2><br>
+<div id="box">
+<ol>
+	<li><p><img style='width:24px;height:24px;' src='http://bombsquadgame.com/img/char/48.png'>Android30577415</b></p><a href="http://bombsquadgame.com/scores#profile?id="><b>➤</b><u><b>See His Current ID!</b></u></a></li>
+	<li><p><img style='width:24px;height:24px;' src='http://bombsquadgame.com/img/char/32.png'>Kawaiidessuz</b></p><a href="http://bombsquadgame.com/scores#profile?id="><b>➤</b><u><b>See His Current ID!</b></u></a></li>
+	<li><p><img style='width:24px;height:24px;' src='http://bombsquadgame.com/img/char/32.png'>GamerBoy12425</b></p><a href="http://bombsquadgame.com/scores#profile?id="><b>➤</b><u><b>See His Current ID!</b></u></a></li>
+	<li><p><img style='width:24px;height:24px;' src='http://bombsquadgame.com/img/char/48.png'>Android29168287</b></p><a href="http://bombsquadgame.com/scores#profile?id="><b>➤</b><u><b>See His Current ID!</b></u></a></li>
+	<li><p><img style='width:24px;height:24px;' src='http://bombsquadgame.com/img/char/32.png'>KungFuPandaIsCool</b></p><a href="http://bombsquadgame.com/scores#profile?id="><b>➤</b><u><b>See His Current ID!</b></u></a></li>
+	<li><p><img style='width:24px;height:24px;' src='http://bombsquadgame.com/img/char/32.png'>GamerX0310</b></p><a href="http://bombsquadgame.com/scores#profile?id="><b>➤</b><u><b>See His Current ID!</b></u></a></li>
+	<li><p><img style='width:24px;height:24px;' src='http://bombsquadgame.com/img/char/32.png'>ARIK1217192ABRAR</b></p><a href="http://bombsquadgame.com/scores#profile?id="><b>➤</b><u><b>See His Current ID!</b></u></a></li>
+	<li><p><img style='width:24px;height:24px;' src='http://bombsquadgame.com/img/char/32.png'>ILoveLordsMobile</b></p><a href="http://bombsquadgame.com/scores#profile?id="><b>➤</b><u><b>See His Current ID!</b></u></a></li>
+	<li><p><img style='width:24px;height:24px;' src='http://bombsquadgame.com/img/char/32.png'>DJHunting</b></p><a href="http://bombsquadgame.com/scores#profile?id="><b>➤</b><u><b>See His Current ID!</b></u></a></li>
+	<li><p><img style='width:24px;height:24px;' src='http://bombsquadgame.com/img/char/48.png'>Android30231920</b></p><a href="http://bombsquadgame.com/scores#profile?id="><b>➤</b><u><b>See His Current ID!</b></u></a></li>
+	<li><p><img style='width:24px;height:24px;' src='http://bombsquadgame.com/img/char/48.png'>Android30008360</b></p><a href="http://bombsquadgame.com/scores#profile?id="><b>➤</b><u><b>See His Current ID!</b></u></a></li>
+	<li><p><img style='width:24px;height:24px;' src='http://bombsquadgame.com/img/char/48.png'>Android23389762</b></p><a href="http://bombsquadgame.com/scores#profile?id="><b>➤</b><u><b>See His Current ID!</b></u></a></li>
+	<li><p><img style='width:24px;height:24px;' src='http://bombsquadgame.com/img/char/48.png'>Android29994162</b></p><a href="http://bombsquadgame.com/scores#profile?id="><b>➤</b><u><b>See His Current ID!</b></u></a></li>
+	<li><p><img style='width:24px;height:24px;' src='http://bombsquadgame.com/img/char/32.png'>EternalLunatic23174</b></p><a href="http://bombsquadgame.com/scores#profile?id="><b>➤</b><u><b>See His Current ID!</b></u></a></li>
+	<li><p><img style='width:24px;height:24px;' src='http://bombsquadgame.com/img/char/32.png'>CleanOfficer80382</b></p><a href="http://bombsquadgame.com/scores#profile?id="><b>➤</b><u><b>See His Current ID!</b></u></a></li>
+	<li><p><img style='width:24px;height:24px;' src='http://bombsquadgame.com/img/char/48.png'>Android30066999</b></p><a href="http://bombsquadgame.com/scores#profile?id="><b>➤</b><u><b>See His Current ID!</b></u></a></li>
+	<li><p><img style='width:24px;height:24px;' src='http://bombsquadgame.com/img/char/32.png'>Hari1422004</b></p><a href="http://bombsquadgame.com/scores#profile?id=pb-IF4oBU44"><b>➤</b><u><b>See His Current ID!</b></u></a></li>
+<li><p><img style='width:24px;height:24px;' src='http://bombsquadgame.com/img/char/32.png'>LijoPrince</b></p><a href="http://bombsquadgame.com/scores#profile?id=pb-IF4AV0QcUg=="><b>➤</b><u><b>See His Current ID!</b></u></a></li>
+<li><p><img style='width:24px;height:24px;' src='http://bombsquadgame.com/img/char/48.png'>Android34090963</b></p><a href="http://bombsquadgame.com/scores#profile?id=pb-IF4XV1EpUQ=="><b>➤</b><u><b>See His Current ID!</b></u></a></li>
+</div>
+
+<h2><b><u>Note</u></b></h2>
+<p><b>If you think reason is inappropriate feel free to contact me on my email<br>sobydanny@gmail.com or <a href="https://discord.gg/p86ag6g"><u>Join The Discord</u></a></p></b>
+<p>Last Updated On 17th May,2019<p></div></body>
